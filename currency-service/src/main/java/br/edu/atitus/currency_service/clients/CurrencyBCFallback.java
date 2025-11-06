@@ -2,6 +2,9 @@ package br.edu.atitus.currency_service.clients;
 
 import java.util.Collections;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class CurrencyBCFallback implements CurrencyBCClient{
 
 	@Override

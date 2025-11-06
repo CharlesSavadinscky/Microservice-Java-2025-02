@@ -23,6 +23,8 @@ public class ProductEntity {
 	@Column(length = 3)
 	private String currency;
 	private Integer stock;
+	@Column(name= "image_url")
+	private String imageUrl;
 	
 	@Transient
 	private String enviroment;
@@ -81,6 +83,12 @@ public class ProductEntity {
 	}
 	public void setConvertedPrice(double convertedPrice) {
 		this.convertedPrice = convertedPrice;
+	}
+	public String getImageUrl() {
+		return imageUrl;
+	}
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
 	}
 	
 	

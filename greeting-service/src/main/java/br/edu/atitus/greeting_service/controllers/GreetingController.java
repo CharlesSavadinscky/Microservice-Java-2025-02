@@ -27,9 +27,6 @@ public class GreetingController {
 		this.greetingConfig = greetingConfig;
 	}
 
-
-
-
 	@GetMapping({"", "/", "/{namePath}"})
 	public ResponseEntity<String> getGreetingService(
 			@RequestParam(required = false) String name,

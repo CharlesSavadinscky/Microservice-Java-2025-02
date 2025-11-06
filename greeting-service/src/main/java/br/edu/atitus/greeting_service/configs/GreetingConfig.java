@@ -22,7 +22,4 @@ public class GreetingConfig {
 	public void setDefaultName(String defaultName) {
 		this.defaultName = defaultName;
 	}
-	
-	
-	
 }
